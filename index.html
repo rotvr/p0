@@ -8,6 +8,8 @@
 <script>
 function getColor(){
     var img = document.getElementById('vibrant_image');
+    img.crossOrigin = 'Anonymous';
+    img.src = 'images/test.jpg';
     var vibrant = new Vibrant(img);
     var swatches = vibrant.swatches()
 }
@@ -15,7 +17,14 @@ function getColor(){
 </head>
 <body>
 <h1 class="title">P0</h1>
-<img id="vibrant_image" onload="getColor()" src="https://imagens.publicocdn.com/imagens.aspx/1187429?tp=UH&amp;db=IMAGENS">
+<img id="vibrant_image">
     
+<script>
+    var img = document.getElementById('vibrant_image');
+    img.crossOrigin = 'Anonymous';
+    img.src = 'images/test.jpg';
+    var vibrant = new Vibrant(img);
+    var swatches = vibrant.swatches()
+</script>
 </body>
 </html>
