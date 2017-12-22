@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>P0: Últimas Notícias do Jornal Público</title>
+<link rel="stylesheet" href="libraries/bulma.css">
+<script src="libraries/vibrant.min.js" ></script>
+<script>
+function getColor(){
+    var img = document.getElementById('vibrant_image');
+    var vibrant = new Vibrant(img);
+    var swatches = vibrant.swatches()
+}
+</script>
+</head>
+<body>
+<h1 class="title">P0</h1>
+<img id="vibrant_image" onload="getColor()" src="https://imagens.publicocdn.com/imagens.aspx/1187429?tp=UH&amp;db=IMAGENS">
+    
+</body>
+</html>
