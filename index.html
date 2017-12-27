@@ -1,30 +1,62 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!doctype html>
+<html>
 <head>
-<meta charset="UTF-8">
-<title>P0: Últimas Notícias do Jornal Público</title>
-<link rel="stylesheet" href="libraries/bulma.css">
-<script src="libraries/vibrant.min.js" ></script>
-<script>
-function getColor(){
-    var img = document.getElementById('vibrant_image');
-    img.crossOrigin = 'Anonymous';
-    img.src = 'images/test.jpg';
-    var vibrant = new Vibrant(img);
-    var swatches = vibrant.swatches()
-}
-</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>P0 - Últimas Notícias do Jornal Público</title>
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/blood.css">
+
+
 </head>
 <body>
-<h1 class="title">P0</h1>
-<img id="vibrant_image">
-    
+<div id="loading_overlay" style="background-image:url('img/loading.jpg')"></div>
+<div class="reveal">
+<div class="slides">
+    <section class="parent_section">
+        <section>
+            <h4 class="date_header" id="date_0">colocar data aqui<h4>
+            <h3 id="title_0">Presidente avisa: alívio de défice tem de ser para abater dívida pública</h1>
+        </section>
+        <section class="article_container">
+        <div class="article">
+        <h5 id="description_0">Poucas horas depois de publicar uma nota com a promulgação do Orçamento, o Presidente explicou as quatro "chamadas de atenção" que deixou a António Costa.</h5>
+        <hr style="border-color: #be0218;">
+        <div id="text_0">
+<p>Ainda a nota de promulga&ccedil;&atilde;o do Or&ccedil;amento do Estado para 2018 estava fresca no site da Presid&ecirc;ncia da Rep&uacute;blica e j&aacute; o Presidente a estava a explicar na rua de viva voz: as quatro &quot;chamadas de aten&ccedil;&atilde;o&quot; s&atilde;o para levar a s&eacute;rio e para que n&atilde;o restem d&uacute;vidas, acabou por explic&aacute;-las. Marcelo Rebelo de Sousa pede &quot;sensatez or&ccedil;amental&quot; em 2019, sem devaneios por causa das elei&ccedil;&otilde;es do ano seguinte e avisa o Governo que tudo o que conseguir em termos de resultados do d&eacute;fice, deve ser para abater na d&iacute;vida p&uacute;blica.</p><p>Recados &agrave; esquerda parlamentar? Diz que n&atilde;o. &quot;&Eacute; uma chamada de aten&ccedil;&atilde;o para 2018 para todos, &agrave; direita e &agrave; esquerda&quot;. E neste pedido para todos, insere as decis&otilde;es sobre despesas p&uacute;blicas permanentes.</p><p>O Presidente quer ver estas despesas - que n&atilde;o particulariza - pensadas com &quot;igualdade&quot; e com &quot;sensatez or&ccedil;amental&quot;. Questionado sobre que despesas em particular se referia na nota - uma vez que do modo como est&aacute; escrito parece referir-se ao descongelamento das carreiras dos professores que t&ecirc;m um grande impacto or&ccedil;amental permanente, Marcelo respondeu que estava a falar em &quot;despesas de funcionamento em geral&quot;. &quot;&Eacute; para todas elas que conv&eacute;m igualdade de tratamento e sensatez or&ccedil;amental e depois ver se se trata de mat&eacute;ria de regime&quot;, referiu.</p><p>Nas explica&ccedil;&otilde;es que deu, o chefe de Estado salientou no entanto que a redu&ccedil;&atilde;o do d&eacute;fice or&ccedil;amental anunciado pelo primeiro-ministro ontem, na sess&atilde;o de cumprimentos de Natal, &eacute; &quot;uma boa not&iacute;cia&quot;. Mas uma boa not&iacute;cia que tem de ser aproveitada e canalizada para o s&iacute;tio certo.</p><p>&quot;&Eacute; uma prioridade que eu sinto que &eacute; o controlo do d&eacute;fice a pensar no endividamente e na redu&ccedil;&atilde;o da d&iacute;vida p&uacute;blica&quot;, disse explicando o porqu&ecirc; de na nota de promulga&ccedil;&atilde;o do documento ter inserido um ponto sobre o endividamento p&uacute;blico. &quot;H&aacute; uma artigo no Or&ccedil;amento que diz que h&aacute; um endividamento m&aacute;ximo ao longo do ano. Das duas uma: para respeitar aquele limite isso significa que a execu&ccedil;&atilde;o oir&ccedil;amental n&atilde;o o pode ultrapassar, para o ultrapassar tem de haver uma altera&ccedil;&atilde;o pela AR nos termos da lei&quot;. Uma frase que faz crer que o Presidente acredita que a execu&ccedil;&atilde;o do pr&oacute;ximo ano poder&aacute; vir a exigir um esfor&ccedil;o suplementar ao endividamento p&uacute;blico e que isso pediria a realiza&ccedil;&atilde;o de um Or&ccedil;amento rectificativo para que fossem alterados os tectos do endividamento p&uacute;blico do ano.</p>
+        </div>
+        <p style="margin-top: 80px;"></p>
+        </div>
+        </section>
+    </section>
+
+
+</div>
+</div>
+
+<script src="lib/moment.min.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 <script>
-    var img = document.getElementById('vibrant_image');
-    img.crossOrigin = 'Anonymous';
-    img.src = 'images/test.jpg';
-    var vibrant = new Vibrant(img);
-    var swatches = vibrant.swatches()
+// More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
+Reveal.initialize({
+    touch: false,
+    progress: false,
+    loop: true,
+    controlsLayout: 'edges',
+	parallaxBackgroundImage: 'img/paralax.jpg',
+	parallaxBackgroundSize: "1920px 1080px ",
+	parallaxBackgroundHorizontal: null,
+	parallaxBackgroundVertical: null,
+	width: '90%',
+	height: '100%',
+	margin: 0,
+	minScale: 1,
+	maxScale: 1
+});
 </script>
+<script src="script.js"></script>
 </body>
 </html>
