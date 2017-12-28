@@ -31,13 +31,22 @@
     position: absolute;
     left: 0; right: 0; top: 0; bottom: 0;
     z-index: 99;
+    background-color:#d10019;
     background-size: cover;
     background-position: center;
     transition: opacity 0.5s ease;
 }
 .date_header{
     color:#d10019 !important;
+    margin-bottom: -10px !important;
     text-transform: uppercase;
+}
+.share_button{
+    color: #f2f2f2 !important;
+    background-color: #d10019;
+    padding: 5px 20px !important;
+    border-radius: 5px;
+    font-size: 12px !important;
 }
 /*********************************************
  * GLOBAL STYLES
